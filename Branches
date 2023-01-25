@@ -1,0 +1,18 @@
+
+Branches:
+	- lets us creat different versions of the code, so that we test implement different features without messing up the stable and original one.
+
+-->git branch
+	- lets us see all the branches in the repo.
+	- our repo for now just have one (master or main)
+
+---------------
+
+Copying a branch:
+
+--> git switch -c name
+			# git checkout -b name // older version of the same command.
+	-> creates and switches to a new branch.
+		- the branch is the copy of exact state of the previous working branch.
+
+

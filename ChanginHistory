@@ -1,0 +1,42 @@
+
+> Amending:
+it's like time machine- Let's us edit previous commits and what we did commit in it.
+
+--> git commit --amend
+	->
+
+> Resetting (kind of like rewind feature):
+
+	-> moves back to one commit.
+
+	--> git reset hashValue
+		( git log --oneline : to extract hash of the commit ).
+		-> it saves the modification in the original files.
+
+> other version ( a bit dangerous )
+	git reset --hard hashValue
+		-> it deletes last commit as well as the modifications in other original files.
+		-> don't use this to be on the safer side.
+
+
+--------------------------
+
+> Rebasing:
+	-> designed to take the commit from one branch and apply them to another.
+
+	-> git rebase <branch>/<commit>
+		# git rebase --interactive <branch>/<commit>
+		# git rebase -i HEAD~#
+		# git rebase -i --root
+	
+
+git rebase -i --root
+
+		-> we can change the order of commits. Like with time machine, and changing the sequence of a event.
+		-> we can do a lot more after launching command like:
+			opens a page editing where we do all the changing.
+		
+		-> squash: combines one commit into the previous one.
+		-> fixup: like squash but doesn't use commit message.
+
+
