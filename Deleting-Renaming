@@ -1,0 +1,29 @@
+Deleting:
+	
+1> manual
+
+2> git rm index.html
+	-> staging for index.html deletion
+	-> then comitting will remove the file.
+
+	> to restore:
+		git restore -S index.html
+			-S -> for staging
+
+
+Renaming:
+
+	-> if we rename a file to something else manually, git will consider the file with the old name deleted, and new file with the new name created.
+
+	-> so we when restore the previous, we will not be seeing that the file with old name appeared but the same file with the new name has stayed.
+
+
+like linux: renaming uses mv
+	git mv index.html home.html
+		-> renames the index.html to home.html
+
+
+****___-> git compares everything from the last commit.___****
+
+
+

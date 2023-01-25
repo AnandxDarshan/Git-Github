@@ -1,0 +1,20 @@
+
+Using .gitignore
+eg: add the following:
+.vscode/
+notes/
+*.java  # will ignore files with extension .java
+
+------------------
+
+Global Ignore File
+
+	git config --global core.excludesfile [file]
+
+------------------
+Clearing the Cache:
+	git rm -r --cached .(current directory)
+
+	--> after a lot of commits, there migth be a number cached stuffs makeing it messy, we clear that using the above command.
+
+
