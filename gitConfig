@@ -1,0 +1,33 @@
+
+# git config command
+
+git config --global user.name "github Username"
+git config --global user.email "Your Email"
+
+global option makes sure that every project will use same name and email address.
+
+----------------------
+# Initializing projects
+once git is configured, next step is to initialize a project.
+i.e., to prepare the folder that is going to hold the project.
+
+git init
+
+this would have initialized a project, and would have created a .git hidden directory too. we cd .git to check how git maintains the project.
+
+-----------------
+
+# Staging Files
+
+git add filename
+	# git add --all
+	# git add -A
+	# git add .
+
+git commit -m "first commit"
+
+So staging is temperary area that we can store files that we want to commit later on.
+
+------------------
+
+
