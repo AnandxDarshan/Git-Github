@@ -1,0 +1,21 @@
+
+__Differences__
+
+-> git diff
+
+	-shows differences between second-last and last change.
+
+- in vscode, there a source control tab.
+	- from where we control a lot without using terminal.
+	- + for add
+	- revert sign and etc
+
+
+git log --oneline
+	-> shows one line log commits, makes it less longer.
+
+git diff hashValue
+	-> gonna show the difference by comparing the latest commit with the the commit of hashValue ( hashValue can be taken form the git log or git log --oneline command ).
+
+
+gitlense is the extension for replacing the diff command.
