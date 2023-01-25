@@ -15,4 +15,36 @@ Copying a branch:
 	-> creates and switches to a new branch.
 		- the branch is the copy of exact state of the previous working branch.
 
+---------------
 
+Now we need to synchronize the new branch with the main(master) branch: we need to know about merging.
+
+> Merging:
+---------
+
+--> merge command will merge the changes from the main branch to the current branch.
+
+--> git merge <branch>
+	- will merge the current branch with the changes in the <branch>.
+
+git switch name
+	-> to switch to the other branch. (name branch) eg. git switch master
+
+--------------
+> Deleting branch
+
+	When we are done with a branch and merged the change into main ( if we want to ), it is good practice to delete the branch.
+
+--> git branch --delete name
+			# git branch -d name
+			# git branch -D name
+
+---------------
+
+>> Git flow:
+-----------
+this is a general pattern that we followed:
+		* feature/fix branch
+		* make changes
+		* merge to master
+		* delete old branch
