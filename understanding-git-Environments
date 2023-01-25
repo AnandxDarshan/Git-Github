@@ -1,0 +1,99 @@
+git log output:
+-------------------------------------
+commit dsfkjakj2kj2afks-hashValue (HEAD -> master)
+Author: username <email@..mail.com>
+Date:   Wed Jan 25 15:40:24 2023 +0530
+
+    gitConfig Notes commit 1
+-------------------------------------
+
+HEAD points to the current branch. ( branch is like alternate reality of the same project ) . By default the branch could be "main" or "master".
+
+----------------------
+next is the Author info:
+	name of the author and the email
+should be the same as we configured in git config
+
+----------------------
+next the date and finally the message we wrote while commiting the file.
+
+--------------------------------------------------------------------------
+
+> Git Environments:
+
+three different environments:
+	i.e., three different places where we can move files.
+
+	@ Working:
+		- files look like what they did during the last commit.
+
+	@ Staging:
+		- now before we create a new commit, we can move our files to a temporary location called stagin.
+		- we do this using 'add' command.
+		- this gives us a way to queue up changes until we are ready to commit.
+		- instructor says, "consider it like dating, before marriage"
+
+	@ Commit:
+		- final, once we move files using "git commit" command to the commit environment, a new log entry is created with a new commit hash.
+
+
+-----------------
+
+File States:
+Before we commit the files, it can be in one of the two states:
+
+	* Tracked:
+		- files that existed in the previous snapshot(commit)
+	
+	* Untracked:
+		- files that are anything else.
+		- for eg.: new files added after the last commit.
+
+-----------------
+
+Tracked Files have their own states:
+	* Unmodified
+	* Modified
+	* Staged 
+
+------------------
+git status -> command
+
+	-> command gives us what is happening behind.
+	-> like if there's any files that is untracked, deleted, modified, it even tells us the environment our files are in and etc.
+
+	-> if nothing would have been done in the folder since the last commit, then our working tree will be shown as clean.
+------------------
+
+status can give us that a file isn't staged:
+	i.e., afte modification, it hasn't been added in the temporary queue.
+
+------------------
+Restoring Files:
+
+	we can even restore the previous version, if we changed something but don't want it to commit or it was inintentional change:
+
+git restore README.txt
+# git restore . 
+# git checkout . // same but checkout can be used in other ways as well.
+
+------------------
+
+restoring last staged environment:
+
+	git restore --staged README.txt
+		-> it removes the README.txt file from staged ( that we did with the help of git add ).
+		-> git status --> will tell us to use git add to put in staged env again, 
+		-> or choose to revert back with git restore README.txt, which will leave us with the old original REAME file, without the changes.
+
+------------------
+new file in the folder:
+	git status .
+		-> will tell us that the new file is not staged and to use git add  .
+		-> if we do, git restore ., it won't delete/remove the file, as the new file is untracked. We'll have to manually delete it.
+
+------------------
+
+
+
+

@@ -20,14 +20,20 @@ this would have initialized a project, and would have created a .git hidden dire
 # Staging Files
 
 git add filename
-	# git add --all
-	# git add -A
+	# git add --all 
+	# git add -A // same as -all option
 	# git add .
-
-git commit -m "first commit"
 
 So staging is temperary area that we can store files that we want to commit later on.
 
+git commit -m "first commit"
+	-m : short message related to the commit.
+	- tells git that's a checkpoint that we want to track for project.
+	- That way we can come back to it later.
 ------------------
 
+#to verify:
+	git log
+	- to see and verify (by looking at the -m message that we write while commiting) if the git is keeping track of the commit or not.
 
+------------------
