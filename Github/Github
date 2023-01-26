@@ -1,0 +1,37 @@
+
+- Why Github ?
+	- cloud repository.
+	- collaborative development
+	- project management:	like creating issues assigning them to developers.
+	
+
+> Working with github
+
+-->>>>>> set up remote:
+		- to do this, first we need to create a repository on github, then tie our local repository with the remote one.
+
+----------------
+-->>>>>> Push:
+		- to push the files from local to the remote repo.
+
+----------------
+-->>>>>> Fetch/Pull:
+		- fetch if any changes happened on the remote repo and pull them to the local machine.
+
+--------------------------------------------------------------------
+
+> Creating a Repository:
+		
+	go to --> github.new
+
+
+------------------------extra-------------------------
+
+git branch -M main --> to add main(-M option) branch.
+
+echo "# repo name" >> readme.md
+
+
+
+
+

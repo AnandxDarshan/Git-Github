@@ -1,0 +1,70 @@
+__git  Stash and Clean command __
+
+ > Stashing Code:
+	
+--> git stash
+			# git stash list  // lists stored stashes
+			# git stash apply  //allows us to apply a stash set of changes.
+			# git stash pop  // will remove the stash from the list, can be used if the changes aren't needed anymore.
+
+	-> temporarily put the changes after a commit in a facility and on hold. Which can be later visited and worked upon.
+
+
+when we stash we are making a stash entry on top ( like a deck of cards or stack ), the stash on top has index 0.
+
+
+
+example scenario:
+	suppose that we applied a color on the site but we wanted to check another color on the site too, we don't want the applied color change to be discorded so that if the new color doesn't look good we can retrieve the older applied color change from the stash.
+That is what stash can help us do.
+
+--------------------------------------------------------------------
+
+> first after having changed the color, we run:
+		git stash
+			-> this will put the changed color to stash list and revert the changes to last commit.
+
+
+> git apply 0(index)
+		--> this will apply the color change stash list again back into the project.
+
+
+> git restore .
+	--> revert back again, maybe to try a different color again.
+	--> revert and restoring will get the stash entry back in the stash list as we are restoring the previous state.
+		check with: git stash
+
+
+> different color tried, then put this change to stash list as well
+	git stash
+
+	git stash list
+		--> we will now see 2 entries for stash
+
+	- so basically, stash is quick of undoing things in a way.
+-------------------------------------------------------------------
+- when all the colors are stashed. and project is at the last commit stage then,
+
+git stash pop
+	-> will delete the stash entry from top (i.e., 0 index )
+
+then git restore .
+	-> to come back to last commit stage.
+
+then git stash pop
+	-> to delete another entry from the stash list.
+		-this removed all the entries. however we could have applied one stash if we wanted.
+
+
+--------------------------------------------------------------------
+
+git clean
+
+	-> git clean -n 	# dry run
+	-> git clean -d 	# directories and sub dirs
+	-> git clean -f  	# force
+
+- removes the branch's untracked files/folders.
+
+
+

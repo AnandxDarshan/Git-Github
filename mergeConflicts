@@ -1,0 +1,20 @@
+
+>> Merge Conflicts:
+	- conflicts happen when we're merging two branches but you or someone else has made the changes to the same items in a file.
+
+example scenario:
+
+		 ___________________                
+		|Your feature branch|----------------> Your fix
+ ___________		^				 |
+|	    |		|				 .merge
+|Main Branch|-------> commit --------> commit--------> commit
+ -----------            |   		  ^merge
+			.		  |
+		|Other user branch|--> Other fix
+		 -----------------
+
+
+vscode has a way of handling it, as it asking which one of the change you want merged when a conflict occurs.
+
+

@@ -1,0 +1,46 @@
+
+Pushing to Github:
+	
+
+--------------------------------------------
+
+--> Remotes:
+
+	git remote add name url
+		# git remote remove name  // removes the remote
+		# git rename oldname newename  // rename remote
+		# git remote -v  // lists all the remotes with verbose.
+
+	-> hosting repo to a remote repo.
+	-> a very common name for the remote that we use is "origin"
+
+	-> so we may see that we are pushing to origin, and we are assigning the URL to the origin name.
+	
+	-> we can add as many remote locations as possible to push our works at multiple places.
+	
+	-> so we can add more than one remotes.
+
+----------------------------------
+
+ > Git Push:
+
+	git push remote branch
+		# git push --set-upstream-to origin main(master)
+		git push -u origin main # --set-upstream ( used for the first push )
+
+		# git push -all // to push every branch
+		# git branch --set-upstream-to <origin/remote-branch>  // sometimes git push -all tell us to manually push for individual branch so we use this .
+
+---------------------------------
+implementation:
+	after having creating a repo on github, either manually or using gh CLI (linux utility),
+
+		git remote add origin repo_url.git
+
+		git push -all
+			- pushes all the branches and stuffs.
+		
+		git push -u origin main(master)
+			- if you only want to push main or master branch ( or one of other branch only ) and the changes in it.
+
+
