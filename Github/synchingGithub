@@ -1,0 +1,60 @@
+Different ways of syncing with what's on the remote (github) to our local hard drive:
+----------------------
+
+1> Clone:
+--------
+	- git clone
+	- get's a copy of the remote repo and places it onto the local hard drive.
+
+
+2> Fetch:
+--------
+	- git fetch
+	- if we already have a copy, but want to sync with the remote for any changes or additions then we use this.
+	- it doesn't actually does anything with the content, but sync to keep the repo info update on the local machine.
+	- like if we created branch on github, we will have fetched the branch from remote to local.
+
+3> Pull:
+-------
+	- git pull
+	- this  is the combination of doing fetch and the merging the contents that's been found in the info (from the fetch ) from remote to local repo.
+
+-------------------------------------------------------------------
+
+Implementation:
+
+> Cloning:
+
+	git clone link
+		link: we can find the link from github repo's code button. copy and paste it at link's place.
+		- this link is really just the url for the repo with .git extention. 
+------------------
+
+> Fetching:
+
+	git fetch
+		- git branch
+			- will show the local branches.
+
+		- git branch -a
+			- will show the local + remote branches.
+
+------------------
+
+> pulling:
+	
+	git pull
+		- will fetch(sync) and download.
+		- sometimes it might ask you to first --set-upstream i.e., to link of the default remote branch for the local branch. by default every pull sets the master as default remote branch.
+
+------------------
+
+additional:
+		
+	git push --all
+		- to push local changes to all the remote branches, and not just into master branch.
+		
+------------------
+
+release:
+

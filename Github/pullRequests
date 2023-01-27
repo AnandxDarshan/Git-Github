@@ -1,0 +1,63 @@
+
+Pull Requests:
+------------
+
+-> this is how users ask for the changes to be made on the main site.
+
+
+steps:
+	- let's edit a file on the github repo.
+	- after changing, we move to Preview changes from Edit file.
+	- there we get what we've modified and then
+	- there's an option to commit those changes, 
+	- you can provide message for the commit and even a longer description.
+	- now at the end you'll have two options to choose from to commit:
+		<*> commit directly to the main branch.
+		<*> create a new branch for the commit and start a pull request.
+
+-------------
+	-> the second option generates a pull request.
+
+	- purpose changes.
+	- opens a pull request
+	- Create pull request.
+--- and there we created a pull request.
+
+next we see:
+	changename followed by the #number ( of pull request).
+
+	- there kinda like discussin goes on, the change etc.
+	- we can ask for opinion and then let other people make comments on it.
+	
+-------------
+	-Once we're done with the  pull request change, we can Merge the pull request.
+	- we confirm merge.
+	- then we get prompt saying: pull request successfully merged and closed.
+
+------------- and that is the whole process of creating and merging a pull request and closing it.
+
+----------------------------------------
+
+additional settings(project management tools) on the right side of the window:
+
+ -> Assignees:
+	- we can add assignees, with different works.
+
+ -> Labels:
+	- we can add labels for specific topics, ask for helps through use.
+
+ -> Milestones:
+	- let's u define targets that you want to achieve with the code.
+
+ -> Linked Issues:
+	- Issues ( i.e., that is defining a task to someone in the project ) can be linked with a pull request 
+	- so if someone does the change and look into the issue, the pull request automatically closes as it's been looked into.
+
+-------------
+
+	commits section:
+		- shows all changes.
+		- pretty cool and handy feature.
+
+
+That is roughly all on pull request.
