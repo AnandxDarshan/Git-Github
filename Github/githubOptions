@@ -1,0 +1,106 @@
+
+ Github Options:
+
+markdown (.md extention) - when you edit files on github, then it uses this mode.
+
+-----------------
+we can even add files directly in the github repo with the option add files.
+	which has two options:
+		- upload files
+		- create new file 
+			* which will give us an option of creating sub directories too, we will write the name followed by / to create a sub directory for the same.
+	
+	for eg.>
+		consider we have a repo names Prime/ we will write sub/ to create sub directory and then we can then finally add the file.
+
+----------------
+
+--> Tags:
+_______
+	- which will make our repo searchable on github if set to public.
+	
+----------------
+About section: for the description of the repo project.
+
+website: we can even add site link if we have made a website for the project.
+
+Topics: again a way of how we make the repo searchable. like if our project was based on html, css and javaScript. then we will write those in here, seperate with a comma, to make it as a tag.
+
+then there are other options in there too.
+
+
+----------------
+
+-->> Issues:
+____________
+	It's kind of like to-do .
+	we can create a to-do task and then assign it to an individual developer or the member of the project team.
+	A way to coolaborate.
+
+------------------
+
+-->> Pull Requests:
+_________________
+	- pull requests are useful for approving somebody else's changes .
+	- we can also use this to compare different branches.
+
+------------------
+
+-->> Actions:
+__________
+	- test codes, or send codes to where it will be hosted automatically.
+	- sort of a way of managing the repo.
+	- we can even download services shown below to perform actions.
+
+	- extremely advance, hence don't mess with it as beginner.
+
+------------------
+
+-->> Projects:
+____________
+	- where we can manage the code that is being used.
+
+------------------
+
+-->> wiki:
+	- it kinda creates documentation of the project, but it isn't that advance or tricky, it is very simple and that's why not used much.
+	- generally documentation is created separately.
+
+-------------------
+
+-->> Security:
+	- manage policies for security.
+	- sort of advance, don't mess much with it yet.
+
+-------------------
+
+-->> Insights:
+	- pretty handy, lets us see the amount of contribution a person has made into the project , shows traffic, shows commits, code frequency, dependancy graphs ( shows what tools the project is using and depends on ), Network, Forks.
+
+-------------------
+
+-->> Settings:
+	there a crazy number of settings in this.
+	- we can add a template refering current repo, which can be used later in other projects.
+
+	- we can even add image to our project.
+	- we can even turn features off and on for the repo.
+	- there's other things, advanced so leaving for now.
+	
+	one imp section in the settings:
+		* Pages:
+			- designed to let u host website through your repository.
+			- so we can host simple sites using the repo.
+			- we can choose the level to host ( i.e., the /root or other directories ).
+			
+			- as soon as it is hosted. it shows a url that you can follow, note that it might take some time.
+		
+			- even though the repo will be private the site will be public.
+		
+
+			- there's one service called, jackle, which let's create the site more easily.
+
+------------------
+
+so yeah we can host stuffs for free through github and that's cool. Lots of developers use that.	
+		
