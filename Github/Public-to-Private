@@ -1,0 +1,8 @@
+How to change an already existing repo that is either private or public into opposite
+
+first navigate to the directory ( local repo ):
+then
+	gh repo --edit visibility private
+
+		- will set the repository to private if it was public.
+
