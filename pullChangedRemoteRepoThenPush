@@ -1,0 +1,22 @@
+
+In case of other developer bringing change in the remote repo.
+you'll have to fetch and pull and then merge it . Then you'll be able to push your change to the remote repo.
+
+to do that:
+
+	git fetch -u origin main( or master)
+		- required for the first time only.
+		- git fetch should work
+
+	git pull
+
+	git merge
+
+	if there's no commit made locally, first make a commit"
+	
+	git commit -m "any message"
+
+	then
+	git push
+
+and we will be good.
